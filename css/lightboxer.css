@@ -1,0 +1,29 @@
+/*	//	//	//	//	//	//	//	//	//	//	//	//	//
+//													//
+//	Lightbox-Custom Plugin by Reuben @dalegroup		//
+//													//
+//	//	//	//	//	//	//	//	//	//	//	//	//	*/
+    
+.lightbox-element{ display:none; position:fixed; left:0; top:0; width:100%; height:100vh; margin:auto; background:rgba(0,0,0,0.8); z-index:5; cursor:pointer; transition:0.5s; }
+.lightbox-container{ width:50%; margin:30px auto; }
+.lightbox-element img{ width:70%; position:relative; height:auto; float:left; margin:auto; margin-left:20%;  margin-bottom:20px;  }
+.lightbox-element .left-caption{ width:20%; background:#fff; margin-right:20px; float:left; margin-bottom:0; }
+.left-caption p, .left-caption h3, .left-caption h2, .left-caption h1, .bottom-caption p, .bottom-caption h3, .bottom-caption h2, .bottom-caption h1{ padding:5px 20px 0 20px; }
+.left-caption ol, .left-caption ul, .bottom-caption ol, .left-caption ul{ padding: 5px 20px 0 20px; text-align:left; }
+.lightbox-element .bottom-caption{  background:#fff; width:70%; margin-left:20%; height:auto; float:left;}
+.lightbox-element .cross{ position:absolute; clear:left; height:100%; margin-left:20px; font-size:30px; font-weight:500; color:#fff; z-index:6; font-family:sans-serif; }
+.lightbox-element .cross:hover{ color:#ccc; }
+@media all and (max-width:1200px){ 
+	.lightbox-element img, .lightbox-element .bottom-caption{ width:85%; margin-left:5%;  }
+	.lightbox-container{ width:75%; }
+}
+
+@media all and (max-width:976px){ 
+	.lightbox-element img, .lightbox-element .bottom-caption{ width:90%; margin-left:10px;  }
+	.lightbox-container{ width:70%; }
+}
+@media all and (max-width:800px){ 
+	.lightbox-element img, .lightbox-element .bottom-caption{ width:80%;}
+	.lightbox-container{ width:60%; }
+}
+
